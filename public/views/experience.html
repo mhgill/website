@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <title>Muhammad Gill's Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  load libs -->
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/w3.css">
+
+    <script type="text/javascript" src="../lib/jquery-1.12.4.min.js"></script>
+    <!-- <script type="text/javascript" src="../lib/clipboard.min.js"></script> -->
+
+    <!--   load styles -->
+    <link rel="stylesheet" href="../css/contactbanner.css">
+    <link rel="stylesheet" href="../css/contactForm.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/Navigator.css">
+    <link rel="stylesheet" href="../css/Site.css">
+    <link rel="stylesheet" href="../css/snackbar.css">
+
+    <!--   load my scripts -->
+    <script type="text/javascript" src="../scripts/Navigator.js"></script>
+    <script type="text/javascript" src="../scripts/generalScripts.js"></script>
+
+    <!--  load security certificate -->
+    <script type="text/javascript" src="https://www.mcafeesecure.com/rpc/ajax?do=tmjs-visit&amp;siteId=5403619&amp;rand=1527444582275"></script>
+</head>
+
+<body class="w3-light-grey">
+    <title>Muhammad Gill's Web</title>
+    <!-- snackbar (toaster) -->
+    <div id="snackbar"></div>
+
+    <!-- Navigator -->
+    <div class="IconNavigator" id="Navigator" title="Navigate">
+        <a href="/introduction" title="Introduction" class="circleIcon1" style="background-color: gray; transform: translate(-125px, 0px);">
+            <i class="fa fa-user fa-2x"></i>
+        </a>
+        <a href="/education" title="Education" class="circleIcon2" style="background-color: gray; transform: translate(-105px, 60px);">
+            <i class="fa fa-graduation-cap fa-2x"></i>
+        </a>
+        <a href="/experience" title="Experience and Side Projects" class="circleIcon3" style="background-color: gray; transform: translate(-60px, 105px);">
+            <i class="fa fa-code fa-2x"></i>
+        </a>
+        <a href="/contact" title="Contact" class="circleIcon4" style="background-color: gray; transform: translate(0px, 125px);">
+            <i class="fa fa-envelope-o fa-2x"></i>
+        </a>
+        <a class="mask2 w3-blue">
+            <i class="fa fa-home fa-3x"></i>
+        </a>
+    </div>
+
+    <!--  security certificate -->
+    <div class="trustedsite-floating-element" id="trustedsite-23a7b7ec59c948e0a5fed823ce15ee0d-image" style="position: fixed; width: 100px; overflow: hidden; bottom: 0px; right: -56px; margin: 0px !important; padding: 0px !important; border: 0px !important; background: none !important; max-width: none !important; max-height: none !important; height: 40px !important; z-index: 1000003 !important; cursor: pointer !important;">
+        <img src="//cdn.ywxi.net/tm/img/float2-right.png?h=mgill.info&amp;d=20180527" width="100" height="40" style="margin:0 !important;padding:0 !important;border:0 !important;background:none !important;max-width:none !important;max-height:none !important;width:100px !important;height:40px !important;"
+            alt="McAfee SECURE">
+    </div>
+    <img id="trustedsite-23a7b7ec59c948e0a5fed823ce15ee0d-image-bg" src="//cdn.ywxi.net/static/img/tm-float-bg-right-bottom.png"
+        alt="McAfee SECURE" class="trustedsite-floating-element" style="width: 100px; right: -56px; margin: 0px !important; padding: 0px !important; border: 0px !important; background: none !important; max-width: none !important; max-height: none !important; position: fixed !important; height: 40px !important; z-index: 1000002 !important; bottom: 0px !important; display: none;">
+    <div class="trustedsite-floating-element" style="z-index: 1000001; position: fixed; right: 0px; bottom: 0px; border-top-left-radius: 3px; margin: 0px !important; padding: 0px !important; border: 0px !important; max-width: none !important; max-height: none !important; width: 36px !important; height: 40px !important; background: rgb(255, 255, 255) !important; opacity: 0.7 !important;"></div>
+
+    <!-- footer -->
+
+    <footer id="footer" class="w3-container w3-blue w3-center">
+        <i onclick="openInNewTab('https://www.linkedin.com/in/mhgill/')" title="LinkedIn Profile" style="padding-right:10px;" class="fa fa-linkedin fa-3x w3-hover-opacity"></i>
+        <i onclick="openInNewTab('https://github.com/mhgill')" title="Github Profile" style="padding-right:10px;" class="fa fa-github fa-3x w3-hover-opacity"></i>
+
+        <a href="mailto:mhgill1997@gmail.com">
+            <i class="fa fa-google fa-3x w3-hover-opacity clip" data-clipboard-text="mhgill1997@gmail.com" title="Gmail Profile" style="padding-right:12px;"></i>
+        </a>
+        <a href="mailto:mhgill@edu.uwaterloo.ca">
+            <i class="fa fa-envelope fa-3x w3-hover-opacity clip" data-clipboard-text="mhgill@edu.uwaterloo.ca" title="Contact Email"
+                style="padding-right:10px;"></i>
+        </a>
+
+        <i onclick="openInNewTab('https://github.com/mhgill/Resume/blob/master/mgill_resume.pdf')" class="fa fa-address-card fa-3x w3-hover-opacity clip"
+            title="CV/Resume"></i>
+    </footer>
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+            <!-- Left Column -->
+            <div class="w3-third" style="padding-bottom:60px;">
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-container">
+                        <br>
+                        <h5 class="w3-large">
+                            <b>
+                                <i class="fa fa-cogs fa-fw w3-margin-right w3-text-blue"></i>Top Technical Skills</b>
+                        </h5>
+                        <h5> Web Development </h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
+                        </div>
+                        <h5>Backend Systems</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:92%">92%</div>
+                        </div>
+                        <h5>Mobile Development</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:82%">82%</div>
+                        </div>
+                        <h5>Database</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:88%">88%</div>
+                        </div>
+                        <h5>Web Services</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">85%</div>
+                        </div>
+                        <br>
+                        <!-- section divider -->
+                        <h5 class="w3-large">
+                            <b>
+                                <i class="fa fa-code fa-fw w3-margin-right w3-text-blue"></i>Top Languages</b>
+                        </h5>
+                        <h5>Python</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:92%">92%</div>
+                        </div>
+                        <h5>Java and C#</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
+                        </div>
+                        <h5>C++</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:84%">84%</div>
+                        </div>
+                        <h5>JavaScript</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:96%">96%</div>
+                        </div>
+                        <h5>Swift and Objective C</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:72%">72%</div>
+                        </div>
+                        <br>
+                        <!-- section divider -->
+                        <h5 class="w3-large">
+                            <b>
+                                <i class="fa fa-cloud fa-fw w3-margin-right w3-text-blue"></i>Top Frameworks</b>
+                        </h5>
+                        <h5>Node.js</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:92%">92%</div>
+                        </div>
+                        <h5>Express.js and Similiar</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
+                        </div>
+                        <h5>.Net and ASP.NET MVC</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:94%">94%</div>
+                        </div>
+                        <h5>STL and Boost</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:82%">82%</div>
+                        </div>
+                        <h5>AngularJS and Ionic</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:86%">86%</div>
+                        </div>
+                        <h5>JQuery and Bootstrap</h5>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:68%">68%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!-- End Left Column -->
+            </div>
+            <!-- Right Column -->
+            <div class="w3-twothird" style="padding-bottom:60px;">
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience </h2>
+                    <div class="w3-container" style="display:flex">
+                        <div>
+                            <h5 class="w3-opacity">
+                                <b>Blackberry | May - Aug 2018 | Software Developer | Waterloo, ON</b>
+                            </h5>
+                            <h6 class="w3-text-blue">
+                                <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - September 2018 </h6>
+                            <p>- Developed neural network for syntax conversion between PL/SQL (oracle) and mySQL (99.98% precision)</p>
+                            <p>- Developed and optimized dynamic scripts to efficiently and securely migrate over 20% of company
+                                databases (schema, procedures and data) between different, incompatible platforms.</p>
+                            <p>- Customized, optimized the source code of an open source mySQL DB to increase insert speed by
+                                12%
+                            </p>
+                            <p>- Contributed greatly in the development of many other confidential projects, currently being
+                                deployed to millions globally
+
+                            </p>
+                        </div>
+                        <a href="https://github.com/mhgill/Resume/blob/master/mgill_resume.pdf">
+                            <img href="" src="../images/bb.png" style="height:190px;position:relative;padding-left:5%;padding-top:5%;">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="w3-container" style="display:flex">
+                        <div>
+                            <h5 class="w3-opacity">
+                                <b>Nielsen | Sept 2017 - Jan 2018 | Software Developer | Toronto, ON</b>
+                            </h5>
+                            <h6 class="w3-text-blue">
+                                <i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2017 - January 2018</h6>
+                            <p>- Developed generic Integration API for synchronous data flow between: Facebook Workplace, Active
+                                Directory, Salesforce, ADP, SharePoint and SQL database</p>
+                            <p>- Developed a dynamic script writer (DSW). DSW successfully wrote 50+ scripts that were used
+                                to process 20,000+ unique data files</p>
+                            <p>- Wrote 3 multi-purpose, dynamic web services for NoSQL infrastructure used by 10+ company apps</p>
+                            <p>- Developed data analysis and report tools; developed automation API for dynamic powerpoint generation
+                                – used by 2 departments, 50+ coworkers, saving 10 000’s of hours per month
+
+                            </p>
+                        </div>
+                        <a href="https://github.com/mhgill/Resume/blob/master/mgill_resume.pdf">
+                            <img src="../images/nielsen.jpg" style="height:190px;position:relative;padding-left:5%;padding-top:5%;">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="w3-container" style="display:flex">
+                        <div>
+                            <h5 class="w3-opacity">
+                                <b>FGF Brands | Jan 2017 - April 2017 | Software Developer | Toronto, ON </b>
+                            </h5>
+                            <h6 class="w3-text-blue">
+                                <i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2017 - April 2017</h6>
+                            <p>- Developed complete ETS (Employee Tracking System)</p>
+                            <p>- Developed ETS app (Native IOS and Android) for GPS tracking using Google Maps API (100+ users)</p>
+                            <p>- Developed web service, and entire Backend for ETS to handle all incoming requests from app
+                                instances using antiforgery and secure data transfer protocols</p>
+                            <p>- Developed web interface (web pages) for data display (displaying 10 000+ records and logs for
+                                100+ users)
+
+                            </p>
+                        </div>
+                        <a href="https://github.com/mhgill/Resume/blob/master/mgill_resume.pdf">
+                            <img src="../images/fgf.png" style="height:190px;position:relative;padding-left:5%;padding-top:5%;">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="w3-container" style="display:flex">
+                        <div>
+                            <h5 class="w3-opacity">
+                                <b>SIDE PROJECTS (Freelancer.com) | Feb 2011 - Present | Software Freelancing | </b>
+                            </h5>
+                            <h6 class="w3-text-blue">
+                                <i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2011 -
+                                <span class="w3-tag w3-blue w3-round">Current</span>
+                            </h6>
+                            <p>- Developed macros (automation software) for pokemon game (1100+ total downloads, $11 000+ revenue:
+                                https://gesoft.herokuapp.com) and Xbot (400+ downloads)</p>
+                            <p>- Developed 2 mobile Apps for news reporting (600+ downloads)</p>
+                            <p>- Completed 30+ freelancer Projects involving deep learning software, web scrapers, web services,
+                                websites, IMS, mobile apps (earned 23,000+ USD)</p>
+                            <p>- Developed Custom Auto bidding macro for freelancer.com and 10+ other macros</p>
+                            <p>- Developed a multi-threaded, real time strategy game and intelligent algorithm for CPU play</p>
+                            <p>- currently working on multiple projects implementing deep learning to solve a host of problems
+                            </p>
+                        </div>
+                        <a href="https://github.com/mhgill/Resume/blob/master/mgill_resume.pdf">
+                            <img src="../images/freelancer.jpg" style="height:190px;position:relative;padding-left:5%;padding-top:5%;">
+                        </a>
+                    </div>
+                    <br>
+                </div>
+                <!-- End Right Column -->
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+    </div>
+
+</body>
+
+</html>
