@@ -1,0 +1,11 @@
+{
+  "name": "personal-website",
+  "description": "You may use this as a template",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~4.16.3"
+  }
+}
