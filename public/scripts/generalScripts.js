@@ -1,6 +1,43 @@
 ﻿
-/* new Clipboard('.btn'); */
+function resume_url(){
+    return 'https://raw.githubusercontent.com/mhgill/website/master/resume.json'
+}
 
+function introduction(){
+    $.getJSON(resume_url(), function (obj) {
+        var intro = obj.intro;
+        var titles = document.getElementsByName('ptitle')
+        var descs = document.getElementsByName('desc')
+
+        for (var i = 0; i < obj.intro.length; i++){
+            var item = obj.intro[i]
+            for (title in item){
+                titles[i].innerText = title
+                if (Array.isArray(item[title])) descs[i].innerText = item[title].join()
+                else descs[i].innerText = item[title]
+            }
+        }
+    });
+}
+
+function experience(){
+    $.getJSON(resume_url(), function (obj) {
+        var experience = obj.experience;
+        var titles = document.getElementsByName('ptitle')
+        var descs = document.getElementsByName('desc')
+
+        for (var i = 0; i < obj.intro.length; i++){
+            var item = obj.intro[i]
+            for (title in item){
+                titles[i].innerText = title
+                if (Array.isArray(item[title])) descs[i].innerText = item[title].join()
+                else descs[i].innerText = item[title]
+            }
+        }
+    });
+}
+
+/* new Clipboard('.btn'); */
 function centerItem(identifier) {
     var $box = $(identifier)
     var boxLeft = ($(window).width()) / 2 - ($box.width() / 2)

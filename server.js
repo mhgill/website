@@ -18,6 +18,11 @@ const VIEW = __dirname + '/public/views/'
 // Routes
 
 // views
+
+app.get('/', function(req, res) {
+  res.sendFile(VIEW + 'introduction.html');
+});
+
 app.get('/introduction', function(req, res) {
   res.sendFile(VIEW + 'introduction.html');
 });
