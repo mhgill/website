@@ -1,8 +1,15 @@
 var express = require('express');
 var path = require('path');
 var mail = require('./mail')
-
 var app = express();
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
+
+app.use(express.json());       // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
 
 app.use(express.static(__dirname + "/public"));
 
@@ -27,8 +34,14 @@ app.get('/contact', function(req, res) {
   res.sendFile(VIEW + 'contact.html');
 });
 
+app.post('/mail', function(req, res) {
+  console.log(req.body.subject)
+  console.log(req.body.body)
+});
+
+
 // Listen
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Listening on localhost:'+ port);
 

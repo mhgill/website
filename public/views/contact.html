@@ -81,13 +81,23 @@
     </footer>
 
     <!-- Page Container -->
-      <!-- Page Container -->
-      <div class="w3-content w3-margin-top" style="max-width:1400px;">
-            <div class="w3-row-padding">
-                <div style="padding-bottom:60px;margin: 0% auto;">
-                    <!-- Main Card -->
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey" style="text-align:center"><i class="fa fa-envelope fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>@ViewBag.Title </h2>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+        <div class="w3-row-padding">
+            <div style="padding-bottom:60px;margin: 0% auto;">
+                <!-- Main Card -->
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey" style="text-align:center">
+                        <i class="fa fa-envelope fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Contact Me </h2>
+                    <form action="mail" method="post">
+                        <label for="subject">Enter subject: </label>
+                        <input id="subject" type="text" name="subject">
+                        <label for="body">Enter body: </label>
+                        <input id="body" type="text" name="body">
+                        <input type="submit" value="OK">
+                    </form>
+
+                    <!--   
                         <form class="form-style-10" enctype="multipart/form-data" action="/Contact/SendMail" method="post">
                             <i class="fa fa-id-card"></i><input maxlength="50" required minlength="2" class="nameinput" id="name" name="org" placeholder="Name/Organization" size="40" type="text" />
                             <br><i class="fa fa-envelope"></i><input maxlength="50" required minlength="7" class="emailinput" id="email" name="email" placeholder="Email" size="40" type="text" aria-required="true" />
@@ -98,11 +108,11 @@
                             </select>
                             <br><i class="fa fa-envelope-open"></i><textarea cols="40" rows="10" name="message" aria-invalid="false" placeholder="Message"></textarea>
                             <br><input type="submit" value="Send" title="Send" class="btn w3-blue">
-                        </form>
-                    </div>
+                        </form> -->
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 
