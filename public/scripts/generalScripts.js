@@ -1,6 +1,6 @@
 ﻿
 function resume_url(){
-    return 'https://raw.githubusercontent.com/mhgill/website/master/resume.json'
+    return 'https://raw.githubusercontent.com/mhgill/Resume/master/resume.json'
 }
 
 function introduction(){
@@ -22,17 +22,12 @@ function introduction(){
 
 function experience(){
     $.getJSON(resume_url(), function (obj) {
-        var experience = obj.experience;
         var titles = document.getElementsByName('ptitle')
         var descs = document.getElementsByName('desc')
 
-        for (var i = 0; i < obj.intro.length; i++){
-            var item = obj.intro[i]
-            for (title in item){
-                titles[i].innerText = title
-                if (Array.isArray(item[title])) descs[i].innerText = item[title].join()
-                else descs[i].innerText = item[title]
-            }
+        for (var i = 0; i < titles.length; i++){ //  change these both to experiece !!!
+            titles[i].innerText = obj.experience[i].organization
+            descs[i].innerText = obj.experience[i].description.join('\n\n')
         }
     });
 }
@@ -73,5 +68,3 @@ function toast(msg) {
     x.className = "show";
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 2000);
 }
-
-

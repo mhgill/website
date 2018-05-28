@@ -14,7 +14,6 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 app.use(express.static(__dirname + "/public"));
 
 const VIEW = __dirname + '/public/views/'
-
 // Routes
 
 // views
