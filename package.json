@@ -1,9 +1,9 @@
 {
-  "name": "personal-website",
-  "description": "You may use this as a template",
+  "name": "website",
+  "description": "My personal CV website, you may use this as a template",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
