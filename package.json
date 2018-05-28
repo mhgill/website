@@ -3,6 +3,7 @@
   "description": "You may use this as a template",
   "main": "server.js",
   "scripts": {
+    "start-dev": "nodemon server.js",
     "start": "node server.js"
   },
   "dependencies": {
