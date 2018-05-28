@@ -35,8 +35,8 @@ app.get('/contact', function(req, res) {
 });
 
 app.post('/mail', function(req, res) {
-  console.log(req.body.subject)
-  console.log(req.body.body)
+  mail.sendmail(req.body.name + ' - CV Website', JSON.stringify( req.body))
+  return res.sendFile(VIEW + 'email_received.html');
 });
 
 

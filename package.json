@@ -3,14 +3,13 @@
   "description": "You may use this as a template",
   "main": "server.js",
   "scripts": {
-    "start-dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "~4.16.3"
+    "express": "^4.16.3"
   }
 }

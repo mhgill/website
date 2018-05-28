@@ -1,1 +1,0 @@
-mail.sendmail('h, fdj7e')
